@@ -1,0 +1,19 @@
+language: java
+dist: precise
+sudo: required
+install: true
+#cache:
+#  directories:
+#  - $HOME/.m2
+
+jdk:
+  - oraclejdk8
+
+env:
+  - TEST=java
+
+script:
+  - 'if [[ $TEST = java ]]; then mvn test -Dsurefire.useFile=false; fi'
+
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
