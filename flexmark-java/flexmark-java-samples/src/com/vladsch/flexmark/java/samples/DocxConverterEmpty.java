@@ -20,7 +20,6 @@ import org.apache.commons.io.IOUtils;
 import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.exceptions.Docx4JException;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
-import org.docx4j.relationships.Relationship;
 
 import java.io.File;
 import java.io.IOException;
@@ -69,7 +68,6 @@ public class DocxConverterEmpty {
         }
     }
 
-
     public static void main(String[] args) {
         String markdown = DocxRenderer.getResourceString("/empty.md");
         System.out.println("markdown\n");
@@ -87,7 +85,7 @@ public class DocxConverterEmpty {
         WordprocessingMLPackage template = DocxRenderer.getDefaultTemplate();
         RENDERER.render(document, template);
 
-        File file = new File("flexmark.docx");
+        File file = new File("flexmark-empty-template.docx");
         try {
             template.save(file, Docx4J.FLAG_SAVE_ZIP_FILE);
         } catch (Docx4JException e) {

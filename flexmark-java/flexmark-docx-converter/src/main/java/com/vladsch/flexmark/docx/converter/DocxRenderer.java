@@ -147,8 +147,9 @@ public class DocxRenderer implements IRender {
 
 
 
-    final public static DataKey<String> PARAGRAPH_BULLET_LIST_STYLE = new DataKey<>("PARAGRAPH_BULLET_LIST_STYLE", "ListBullet");
+    final public static DataKey<String> PARAGRAPH_BULLET_LIST_STYLE = new DataKey<>("PARAGRAPH_BULLET_LIST_STYLE", "C503-0");
     final public static DataKey<String> PARAGRAPH_NUMBERED_LIST_STYLE = new DataKey<>("PARAGRAPH_NUMBERED_LIST_STYLE", "C503-1");
+
     final public static DataKey<String> PAGE_SIZE = new DataKey<>("PAGE_SIZE", ""); // NOTE: if not in PageSizePaper then will use default from the ML Package
     final public static DataKey<Boolean> PAGE_LANDSCAPE = new DataKey<>("PAGE_LANDSCAPE", false); // NOTE: only used if page size is also defined
 
