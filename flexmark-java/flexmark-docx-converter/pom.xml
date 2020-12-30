@@ -101,6 +101,8 @@
             <artifactId>docx4j-JAXB-Internal</artifactId>
             <version>8.1.6</version>
         </dependency>
+
+
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>

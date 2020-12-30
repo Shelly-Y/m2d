@@ -1,168 +1,32 @@
-## Markdown to DOCX Empty Document  Template
+[TOC]
 
-This document is used to generate an empty document template for the docx conversion.
+# 范围
+## 标识
+* 本文档的标识号：公司代号/产品代号/区分号/XQ-01；
+* 标题：XXXX需求规格说明；
+* 本文档适用于XXX系统/软件/XXXXCSCI。
+## 系统概述
+标识并描述本文档使用的CSCI（可以是一个系统中的多个配置项）在系统中的作用、运行环境等。包括系统和软件的一般特性；概述系统开发、运行和维护的历史；标识项目的投资方、需方、用户、开发方和支持机构。（备注：描述系统背景、目的及用途等，可参照任务书和系统方案文档。）
+# 引用文件
+按文档号、标题、编写单位（和作者）和出版日期等，列出本文档引用的所有文件。引用文件表格如下：
 
-The page content is ignored and only used to show/modify all the styles used by the markdown
-conversion process.
 
-**DO NOT CHANGE PAGE CONTENT IN THIS DOCUMENT**
+|  编号 | 文档名称 | 文档编号 | 编写单位（作者） |  出版日期  |
+|-------|---------|---------|-----------------|----------|
+|    |   |   |   |   |
+|    |   |   |   |   |
+[表 2-1 引用文件]
+# 总体说明
+本章描述影响产品和需求的一般引述，而不叙述具体需求。它提供需求的总体描述和背景，并使它们更易理解。本章内容无需作为需求项进行追踪，详细内容应在后续章节进行描述。
+除下述章节外，需求文档中其余易受到关注的内容（如软件产品的可靠性设计等）宜在本章进行总体描述。
+## 项目特点分析
+* 本文档的标识号：公司代号/产品代号/区分号/XQ-01；
+* 标题：XXXX需求规格说明；
+* 本文档适用于XXX系统/软件/XXXXCSCI。
+## 软件与系统的关系
+使用系统框图、数据流图、部署图等各类示意图，描述系统的组成，软件在系统中的位置及与系统中其他软件、硬件的关系。给出软件的运行环境（部署的软硬件环境和对外接口），并描述软件与系统中各软件配置项和硬件配置项间的接口。
+![alt align.center](image/22.png)
+[图4.2 流程图]
 
-**Changes you can make that will be used to generate DOCX from markdown:**
-
-1. All styles inherit from docx style "Normal" you should first adjust the font family and font
-   size of this style, if desired.
-2. You may have two "Heading" styles. Open Format/Styles and delete one of the duplicates. Keep
-   the one that is closest to what you want for headings. **NOTE:** even if the headings in this
-   document look good, with a duplicate "Heading" style there is no guarantee which one will be
-   used when documents are generated from this template.
-3. All Heading... styles inherit from docx style "Heading", to change the heading font you
-   should change this style.
-4. Ordered Lists use numbering list style `NumberedList`
-5. Unordered Lists use numbering list style `BulletList`
-6. In the document pages change styles given by name after `docx style "..."` do not yet change
-   the text.
-7. Change page footer/header text and formatting, as you like. They are used as is in the
-   conversion process. Make sure you have at least 3 pages so you can see styles for first page,
-   even page and odd page.
-8. When done changing styles and headers/footers, delete any document page content you don't
-   want to be included in every conversion. You can do select all and delete if all the content
-   will come from markdown.
-9. Save it under the name you wish to use as the empty document template for conversion.
-10. You can make changes to styles directly in the saved document but if you deleted the text
-    with these styles, you will not be able to preview the results.
-
-The following document content can be used to preview changes to formatting styles and make
-changes to them.
-
----
-
-**Heading Styles**
-
-# Heading 1 docx style "Heading 1"
-
-## Heading 2 docx style "Heading 2"
-
-###  Heading 3 docx style "Heading 3"
-
-####  Heading 4 docx style "Heading 4"
-
-#####  Heading 5 docx style "Heading 5"
-
-######  Heading 6 docx style "Heading 6"
-
----
-
-**Horizontal Line Style**
-
-HORIZONTAL_LINE_STYLE docx style named "Horizontal Line" generates the following horizontal rule
-
----
-
-**Paragraph Styles**
-
-LOOSE_PARAGRAPH_STYLE docx style named "Paragraph Text Body" is used for text and loosely spaced
-list item content
-
-* loose list item
-
-* loose list item
-
-TIGHT_PARAGRAPH_STYLE docx style named "Body Text" is used for tightly spaced list item content
-
-* tight list item
-* tight list item
-
-> BLOCK_QUOTE_STYLE docx style named "Quotations" is used for block quotes
-
-| ASIDE_BLOCK_STYLE docx style named "AsideBlock" is used for aside blocks
-
-    PREFORMATTED_TEXT_STYLE docx style named "Preformatted Text" used for code fence and indented code
-
----
-
-**Character styles used in text formatting:**
-
-* BOLD_STYLE - docx style named "Strong Emphasis" plain **sample** plain
-* ITALIC_STYLE - docx style named "Emphasis" plain *sample* plain
-* STRIKE_THROUGH_STYLE - docx style named "Strikethrough" plain ~~sample~~ plain
-* SUBSCRIPT_STYLE - docx style named "Subscript" plain ~sample~ plain
-* SUPERSCRIPT_STYLE - docx style named "Superscript" plain ^sample^ plain
-* INS_STYLE - docx style named "Underlined" plain ++sample++ plain
-* INLINE_CODE_STYLE - docx style named "Source Text" plain `sample` plain
-* HYPERLINK_STYLE - docx style named "Hyperlink" plain [sample](http://example.com) plain
-* FOOTNOTE_ANCHOR_STYLE - docx style named "Footnote Reference" plain **[^1]** plain
-
----
-
-**Table Styles**
-
-|  TABLE_HEADING docx style named "Table Heading"  | TABLE_HEADING  |
-|--------------------------------------------------|----------------|
-| TABLE_CONTENTS docx style named "Table Contents" | TABLE_CONTENTS |
-| TABLE_CONTENTS                                   | TABLE_CONTENTS |
-[TABLE_CAPTION docx style named "Table Caption"]
-
----
-
-**The following can only be used for previewing**
-
-Changes can be made but this has to be done in the flexmark-java docx converter `empty.xml`
-resource. Then conversion with this basic template should be run against the `empty.md` file to
-generate this docx starter template.
-
-Bullet list (Given by numbering list style `BulletList` or default numbering list style if one
-is not given)
-
-* Bullet Level 1
-  * Bullet Level 2
-    * Bullet Level 3
-      * Bullet Level 4
-        * Bullet Level 5
-          * Bullet Level 6
-            * Bullet Level 7
-              * Bullet Level 8
-                * Bullet Level 9
-
-Numbered List (Given by numbering list style `NumberedList` or default numbering list style if
-one is not given)
-
-1. Numbered Level 1
-   1. Numbered Level 2
-      1. Numbered Level 3
-         1. Numbered Level 4
-            1. Numbered Level 5
-               1. Numbered Level 6
-                  1. Numbered Level 7
-                     1. Numbered Level 8
-                        1. Numbered Level 9
-
-Block Quoted Bullet list
-
-> * Bullet Level 1
->   * Bullet Level 2
->     * Bullet Level 3
->       * Bullet Level 4
-
-Block Quoted Numbered List
-
-> 1. Numbered Level 1
->    1. Numbered Level 2
->       1. Numbered Level 3
->          1. Numbered Level 4
-
-Aside Block Bullet list
-
-| * Bullet Level 1
-|   * Bullet Level 2
-|     * Bullet Level 3
-|       * Bullet Level 4
-
-Aside Block Numbered List
-
-| 1. Numbered Level 1
-|    1. Numbered Level 2
-|       1. Numbered Level 3
-|          1. Numbered Level 4
-
-[^1]: FOOTNOTE_STYLE named "Footnote" Text Sample
+aaaaa
 

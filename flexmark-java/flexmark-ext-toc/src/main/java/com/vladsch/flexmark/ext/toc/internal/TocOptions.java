@@ -15,7 +15,7 @@ import org.jetbrains.annotations.Nullable;
 @SuppressWarnings("WeakerAccess")
 public class TocOptions implements Immutable<TocOptions, TocOptions.AsMutable>, MutableDataSetter {
     final public static TocOptions DEFAULT = new TocOptions();
-    final public static int DEFAULT_LEVELS = 4 | 8; // 0 not used, default H2 & H3, H1 assumed to be document heading and does not need to be part of TOC
+    final public static int DEFAULT_LEVELS = 4 | 8; // 1100   0 not used, default H2 & H3, H1 assumed to be document heading and does not need to be part of TOC
     final public static String DEFAULT_TITLE = "Table of Contents";
     final public static int DEFAULT_TITLE_LEVEL = 1;
     final public static int VALID_LEVELS = 0x7e;

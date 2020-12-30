@@ -109,16 +109,15 @@ public class DocxRendererOptions {
     final public String PARAGRAPH_BULLET_LIST_STYLE;
     final public String PARAGRAPH_NUMBERED_LIST_STYLE;
     final public String[] HEADINGS;
+    final public String IMAGE_STYLE;
 
     final HashMap<String, String> styleIdToStyleName;
     final HashMap<String, String> nameToStyleStyleId;
     public boolean isResolved;
 
-    public DocxRendererOptions(DataHolder options) {
-        this(options, null);
-    }
 
     public DocxRendererOptions(DataHolder options, WordprocessingMLPackage out) {
+
         if (out == null) {
             styleIdToStyleName = null;
             nameToStyleStyleId = null;
@@ -191,7 +190,7 @@ public class DocxRendererOptions {
         NUMBERED_LIST_STYLE = resolveStyleId(DocxRenderer.NUMBERED_LIST_STYLE.get(options), !isResolved);
         PARAGRAPH_BULLET_LIST_STYLE = resolveStyleId(DocxRenderer.PARAGRAPH_BULLET_LIST_STYLE.get(options), !isResolved);
         PARAGRAPH_NUMBERED_LIST_STYLE = resolveStyleId(DocxRenderer.PARAGRAPH_NUMBERED_LIST_STYLE.get(options), !isResolved);
-
+        IMAGE_STYLE = resolveStyleId(DocxRenderer.IMAGE_STYLE.get(options), !isResolved);
         HEADINGS = new String[] {
                 HEADING_1,
                 HEADING_2,
@@ -201,8 +200,12 @@ public class DocxRendererOptions {
                 HEADING_6,
         };
     }
+    public DocxRendererOptions(DataHolder options) {
+        this(options, null);
+    }
 
     public DocxRendererOptions(DocxRendererOptions other, WordprocessingMLPackage out) {
+
         styleIdToStyleName = new HashMap<>();
         nameToStyleStyleId = new HashMap<>();
         isResolved = true;
@@ -269,7 +272,7 @@ public class DocxRendererOptions {
         NUMBERED_LIST_STYLE = resolveStyleId(other.NUMBERED_LIST_STYLE, other.isResolved);
         PARAGRAPH_BULLET_LIST_STYLE = resolveStyleId(other.PARAGRAPH_BULLET_LIST_STYLE, other.isResolved);
         PARAGRAPH_NUMBERED_LIST_STYLE = resolveStyleId(other.PARAGRAPH_NUMBERED_LIST_STYLE, other.isResolved);
-
+        IMAGE_STYLE = resolveStyleId(other.PARAGRAPH_NUMBERED_LIST_STYLE, other.isResolved);
         HEADINGS = other.isResolved ? other.HEADINGS :
                 new String[] {
                         HEADING_1,
@@ -280,6 +283,8 @@ public class DocxRendererOptions {
                         HEADING_6,
                 };
     }
+
+
 
     private String resolveStyleId(String styleId, boolean isResolved) {
         if (!isResolved && !styleIdToStyleName.containsKey(styleId)) {

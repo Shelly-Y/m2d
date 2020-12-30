@@ -76,7 +76,7 @@ public class DocxRenderer implements IRender {
     final public static DataKey<Boolean> SUPPRESS_INLINE_HTML_COMMENTS = HtmlRenderer.SUPPRESS_INLINE_HTML_COMMENTS;
     final public static DataKey<Boolean> LINEBREAK_ON_INLINE_HTML_BR = new DataKey<>("LINEBREAK_ON_INLINE_HTML_BR", true);
     final public static DataKey<Boolean> TABLE_CAPTION_TO_PARAGRAPH = new DataKey<>("TABLE_CAPTION_TO_PARAGRAPH", true);
-    final public static DataKey<Boolean> TABLE_CAPTION_BEFORE_TABLE = new DataKey<>("TABLE_CAPTION_BEFORE_TABLE", false);
+    final public static DataKey<Boolean> TABLE_CAPTION_BEFORE_TABLE = new DataKey<>("TABLE_CAPTION_BEFORE_TABLE", true);
     final public static DataKey<Integer> TABLE_PREFERRED_WIDTH_PCT = new DataKey<>("TABLE_PREFERRED_WIDTH_PCT", 0);
     final public static DataKey<Integer> TABLE_LEFT_INDENT = new DataKey<>("TABLE_LEFT_INDENT", 120);
     final public static DataKey<String> TABLE_STYLE = new DataKey<>("TABLE_STYLE", "");
@@ -108,7 +108,7 @@ public class DocxRenderer implements IRender {
     final public static DataKey<String> ASIDE_BLOCK_STYLE = new DataKey<>("ASIDE_BLOCK_STYLE", "AsideBlock");
     final public static DataKey<String> BLOCK_QUOTE_STYLE = new DataKey<>("BLOCK_QUOTE_STYLE", "Quotations");
     final public static DataKey<String> BOLD_STYLE = new DataKey<>("BOLD_STYLE", "StrongEmphasis");
-    final public static DataKey<String> DEFAULT_STYLE = new DataKey<>("DEFAULT_STYLE", "Normal");
+    final public static DataKey<String> DEFAULT_STYLE = new DataKey<>("DEFAULT_STYLE", "C503-2");
     final public static DataKey<String> ENDNOTE_ANCHOR_STYLE = new DataKey<>("ENDNOTE_ANCHOR_STYLE", "EndnoteReference");
     final public static DataKey<String> FOOTER = new DataKey<>("FOOTER", "a7");
     final public static DataKey<String> FOOTNOTE_ANCHOR_STYLE = new DataKey<>("FOOTNOTE_ANCHOR_STYLE", "afc");
@@ -131,7 +131,7 @@ public class DocxRenderer implements IRender {
     final public static DataKey<String> STRIKE_THROUGH_STYLE = new DataKey<>("STRIKE_THROUGH_STYLE", "Strikethrough");
     final public static DataKey<String> SUBSCRIPT_STYLE = new DataKey<>("SUBSCRIPT_STYLE", "Subscript");
     final public static DataKey<String> SUPERSCRIPT_STYLE = new DataKey<>("SUPERSCRIPT_STYLE", "Superscript");
-    final public static DataKey<String> TABLE_CAPTION = new DataKey<>("TABLE_CAPTION", "Char3");
+    final public static DataKey<String> TABLE_CAPTION = new DataKey<>("TABLE_CAPTION", "ab");
     final public static DataKey<String> TABLE_CONTENTS = new DataKey<>("TABLE_CONTENTS", "C503-3");
     final public static DataKey<String> TABLE_GRID = new DataKey<>("TABLE_GRID", "afd");
     final public static DataKey<String> TABLE_HEADING = new DataKey<>("TABLE_HEADING", "C503-4");
@@ -145,7 +145,7 @@ public class DocxRenderer implements IRender {
     final public static DataKey<String> BULLET_LIST_STYLE = new DataKey<>("BULLET_LIST_STYLE", "BulletList");
     final public static DataKey<String> NUMBERED_LIST_STYLE = new DataKey<>("NUMBERED_LIST_STYLE", "NumberedList");
 
-
+    final public static DataKey<String> IMAGE_STYLE = new DataKey<>("IMAGE_STYLE", "C503-6");
 
     final public static DataKey<String> PARAGRAPH_BULLET_LIST_STYLE = new DataKey<>("PARAGRAPH_BULLET_LIST_STYLE", "C503-0");
     final public static DataKey<String> PARAGRAPH_NUMBERED_LIST_STYLE = new DataKey<>("PARAGRAPH_NUMBERED_LIST_STYLE", "C503-1");
@@ -1035,4 +1035,6 @@ public class DocxRenderer implements IRender {
         }
         return stream;
     }
+
+
 }

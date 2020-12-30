@@ -63,6 +63,7 @@ import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
 import org.docx4j.openpackaging.parts.WordprocessingML.NumberingDefinitionsPart;
 import org.docx4j.openpackaging.parts.relationships.RelationshipsPart;
 import org.docx4j.relationships.Relationship;
+import org.docx4j.toc.Toc;
 import org.docx4j.toc.TocException;
 import org.docx4j.toc.TocGenerator;
 import org.docx4j.wml.*;
@@ -152,6 +153,7 @@ public class CoreNodeDocxRenderer implements PhasedNodeDocxRenderer {
         footnoteRepository = FootnoteExtension.FOOTNOTES.get(options);
         footnoteRepository.resolveFootnoteOrdinals();
 
+
         this.options = new DocxRendererOptions(options);
         listOptions = ListOptions.get(options);
         footnoteIDs = new HashMap<>();
@@ -194,11 +196,15 @@ public class CoreNodeDocxRenderer implements PhasedNodeDocxRenderer {
                         tocGenerator = new TocGenerator(docx.getPackage());
                         tocGenerator.setStartingIdForNewBookmarks(docx.getBookmarkIdAtomic());
                         //tocGenerator.generateToc( 0,    "TOC \\o \"1-3\" \\h \\z \\u ", true);
-                        tocGenerator.generateToc(0, options.tocInstruction, true);
+                        tocGenerator.generateToc(1, options.tocInstruction, false);
+                       // tocGenerator.generateToc(2, "TOC \\h \\z \\c \"表\"", false);
+                        Toc.setTocHeadingText("目录");
+
+
                     } catch (TocException e) {
                         if (tocGenerator != null && e.getMessage().contains("use updateToc instead")) {
                             try {
-                                tocGenerator.updateToc(true);
+                                tocGenerator.updateToc(false);
                             } catch (TocException e1) {
                                 e1.printStackTrace();
                             }
@@ -1648,6 +1654,9 @@ public class CoreNodeDocxRenderer implements PhasedNodeDocxRenderer {
 
         attributes = docx.extendRenderingNodeAttributes(AttributablePart.NODE, attributes);
 
+        docx.setBlockFormatProvider(new ImageBlockFormatProvider<>(docx));
+        addBlockAttributeFormatting(node, AttributablePart.NODE, docx, true);
+
         //String alt = node.getText().unescape();
         renderImage(docx, resolvedLink, attributes, 1.0);
     }
@@ -1879,7 +1888,7 @@ public class CoreNodeDocxRenderer implements PhasedNodeDocxRenderer {
         PPr pPr = docx.getFactory().createPPr();
         docx.getHelper().ensureInd(pPr);
         PPrBase.Ind ind = pPr.getInd();
-        ind.setLeft(null);
+        ind.setHanging(null);
 
         PPr parentPPr = docx.getFactory().createPPr();
         docx.getBlockFormatProvider().getPPr(parentPPr);
@@ -2008,6 +2017,7 @@ public class CoreNodeDocxRenderer implements PhasedNodeDocxRenderer {
             BooleanDefaultTrue booleandefaulttrue = docx.getFactory().createBooleanDefaultTrue();
             JAXBElement<org.docx4j.wml.BooleanDefaultTrue> booleandefaulttrueWrapped = docx.getFactory().createCTTrPrBaseTblHeader(booleandefaulttrue);
             trpr.getCnfStyleOrDivIdOrGridBefore().add(booleandefaulttrueWrapped);
+
         }
 
         docx.renderChildren(node);

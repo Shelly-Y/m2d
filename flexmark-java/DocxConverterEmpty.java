@@ -1,8 +1,8 @@
 package com.vladsch.flexmark.java.samples;
 
-import com.vladsch.flexmark.docx.converter.util.Docx4JUtils;
+import com.vladsch.flexmark.docx.converter.Docx4JUtils;
 import com.vladsch.flexmark.docx.converter.DocxRenderer;
-import com.vladsch.flexmark.docx.converter.util.Foo;
+import com.vladsch.flexmark.docx.converter.internal.CoreNodeDocxRenderer;
 import com.vladsch.flexmark.ext.aside.AsideExtension;
 import com.vladsch.flexmark.ext.definition.DefinitionExtension;
 import com.vladsch.flexmark.ext.emoji.EmojiExtension;
@@ -27,12 +27,13 @@ import org.docx4j.openpackaging.exceptions.InvalidFormatException;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 import org.docx4j.relationships.Relationship;
 
-import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.util.Arrays;
+
+
 /**
  * Creates a docx document from DocxRenderer provided empty.md and empty.xml
  */
@@ -54,8 +55,8 @@ public class DocxConverterEmpty {
             ))
             .set(DocxRenderer.SUPPRESS_HTML, true)
             // the following two are needed to allow doc relative and site relative address resolution
-            .set(DocxRenderer.DOC_RELATIVE_URL, "image/..") // this will be used for URLs like 'images/...' or './' or '../'
-            //.set(DocxRenderer.DOC_ROOT_URL, "image/..") // this will be used for URLs like: '/...'
+            //.set(DocxRenderer.DOC_RELATIVE_URL, "file:///Users/vlad/src/pdf") // this will be used for URLs like 'images/...' or './' or '../'
+            //.set(DocxRenderer.DOC_ROOT_URL, "file:///Users/vlad/src/pdf") // this will be used for URLs like: '/...'
             ;
 
     static String getResourceFileContent(String resourcePath) {
@@ -74,7 +75,7 @@ public class DocxConverterEmpty {
         }
     }
 
-    public static void main(String[] args) throws InvalidFormatException, JAXBException {
+    public static void main(String[] args) throws InvalidFormatException {
         String markdown = DocxRenderer.getResourceString("/empty.md");
         System.out.println("markdown\n");
         System.out.println(markdown);
@@ -92,9 +93,6 @@ public class DocxConverterEmpty {
 
         // or to control the package
         WordprocessingMLPackage template = DocxRenderer.getDefaultTemplate();
-
-        template.getMainDocumentPart().addObject(Foo.createTb());
-
         DocxRenderer.setPageSize(template, PageSizePaper.A4,false);
         Relationship relationship = Docx4JUtils.createFooterPart(template);
         Docx4JUtils.createFooterReference(template, relationship);

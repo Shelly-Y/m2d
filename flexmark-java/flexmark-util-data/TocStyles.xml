@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" >
+  <!--  A definition for Normal is programmatically generated, if necessary -->
+  <w:style w:type="paragraph" w:default="1" w:styleId="a1">
+    <w:name w:val="Normal"/>
+    <w:semiHidden/>
+    <w:qFormat/>
+    <w:rsid w:val="00050882"/>
+    <w:pPr>
+      <w:widowControl w:val="0"/>
+      <w:jc w:val="both"/>
+    </w:pPr>
+    <w:rPr>
+      <w:kern w:val="2"/>
+      <w:sz w:val="21"/>
+      <w:szCs w:val="22"/>
+    </w:rPr>
+  </w:style>
+
+  <w:style w:type="paragraph" w:styleId="TOCHeading">
+    <w:name w:val="TOC Heading"/>
+    <w:aliases w:val="C503-目录-目录标题"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:link w:val="Char5"/>
+    <w:qFormat/>
+    <w:rsid w:val="008F2F2D"/>
+    <w:pPr>
+      <w:spacing w:after="240" w:line="360" w:lineRule="auto"/>
+      <w:jc w:val="center"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:eastAsia="黑体" w:hAnsi="Times New Roman"/>
+      <w:b/>
+      <w:bCs/>
+      <w:sz w:val="32"/>
+      <w:szCs w:val="32"/>
+      <w:lang w:val="x-none" w:eastAsia="x-none"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="character" w:customStyle="1" w:styleId="Char5">
+    <w:name w:val="标题 Char"/>
+    <w:aliases w:val="C503-目录-目录标题 Char"/>
+    <w:link w:val="af"/>
+    <w:rsid w:val="008F2F2D"/>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:eastAsia="黑体" w:hAnsi="Times New Roman" w:cs="Arial"/>
+      <w:b/>
+      <w:bCs/>
+      <w:kern w:val="2"/>
+      <w:sz w:val="32"/>
+      <w:szCs w:val="32"/>
+    </w:rPr>
+  </w:style>
+
+
+
+  <w:style w:type="paragraph" w:styleId="TOC1">
+    <w:name w:val="toc 1"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:uiPriority w:val="39"/>
+    <w:rsid w:val="0019276D"/>
+    <w:pPr>
+      <w:tabs>
+        <w:tab w:val="left" w:pos="420"/>
+        <w:tab w:val="right" w:leader="dot" w:pos="8400"/>
+      </w:tabs>
+      <w:spacing w:before="120" w:after="120" w:line="360" w:lineRule="auto"/>
+      <w:jc w:val="left"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:b/>
+      <w:noProof/>
+      <w:sz w:val="24"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC2">
+    <w:name w:val="toc 2"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:uiPriority w:val="39"/>
+    <w:rsid w:val="00B965AC"/>
+    <w:pPr>
+      <w:tabs>
+        <w:tab w:val="left" w:pos="1260"/>
+        <w:tab w:val="right" w:leader="dot" w:pos="8400"/>
+      </w:tabs>
+      <w:spacing w:line="360" w:lineRule="auto"/>
+      <w:ind w:leftChars="200" w:left="420"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:sz w:val="20"/>
+      <w:szCs w:val="20"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC3">
+    <w:name w:val="toc 3"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:uiPriority w:val="39"/>
+    <w:rsid w:val="00B965AC"/>
+    <w:pPr>
+      <w:tabs>
+        <w:tab w:val="left" w:pos="1680"/>
+        <w:tab w:val="right" w:leader="dot" w:pos="8400"/>
+      </w:tabs>
+      <w:spacing w:line="360" w:lineRule="auto"/>
+      <w:ind w:leftChars="400" w:left="840"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:sz w:val="20"/>
+      <w:szCs w:val="20"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC4">
+    <w:name w:val="toc 4"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:semiHidden/>
+    <w:rsid w:val="00A52079"/>
+    <w:pPr>
+      <w:ind w:leftChars="600" w:left="1260"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC5">
+    <w:name w:val="toc 5"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:semiHidden/>
+    <w:rsid w:val="00A52079"/>
+    <w:pPr>
+      <w:ind w:leftChars="800" w:left="1680"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC6">
+    <w:name w:val="toc 6"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:semiHidden/>
+    <w:rsid w:val="00A52079"/>
+    <w:pPr>
+      <w:ind w:leftChars="1000" w:left="2100"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC7">
+    <w:name w:val="toc 7"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:semiHidden/>
+    <w:rsid w:val="00A52079"/>
+    <w:pPr>
+      <w:ind w:leftChars="1200" w:left="2520"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC8">
+    <w:name w:val="toc 8"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:semiHidden/>
+    <w:rsid w:val="00A52079"/>
+    <w:pPr>
+      <w:ind w:leftChars="1400" w:left="2940"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="paragraph" w:styleId="TOC9">
+    <w:name w:val="toc 9"/>
+    <w:basedOn w:val="a1"/>
+    <w:next w:val="a1"/>
+    <w:autoRedefine/>
+    <w:semiHidden/>
+    <w:rsid w:val="00A52079"/>
+    <w:pPr>
+      <w:ind w:leftChars="1600" w:left="3360"/>
+    </w:pPr>
+    <w:rPr>
+      <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+      <w:szCs w:val="24"/>
+    </w:rPr>
+  </w:style>
+  <w:style w:type="character" w:styleId="Hyperlink">
+    <w:name w:val="Hyperlink"/>
+    <!-- <w:basedOn w:val="DefaultParagraphFont"/>  -->
+    <w:uiPriority w:val="99"/>
+    <w:unhideWhenUsed/>
+    <w:rPr>
+      <w:color w:val="0000FF" w:themeColor="hyperlink"/>
+      <w:u w:val="single"/>
+    </w:rPr>
+  </w:style>
+</w:styles>

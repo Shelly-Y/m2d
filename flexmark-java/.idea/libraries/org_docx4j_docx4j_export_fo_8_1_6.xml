@@ -1,0 +1,61 @@
+<component name="libraryTable">
+  <library name="org.docx4j:docx4j-export-fo:8.1.6" type="repository">
+    <properties maven-id="org.docx4j:docx4j-export-fo:8.1.6" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/docx4j-export-fo/8.1.6/docx4j-export-fo-8.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/docx4j-core/8.1.6/docx4j-core-8.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/docx4j-openxml-objects/8.1.6/docx4j-openxml-objects-8.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/docx4j-openxml-objects-pml/8.1.6/docx4j-openxml-objects-pml-8.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/docx4j-openxml-objects-sml/8.1.6/docx4j-openxml-objects-sml-8.1.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/plutext/jaxb-svg11/1.0.2/jaxb-svg11-1.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/engio/mbassador/1.3.2/mbassador-1.3.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.26/jcl-over-slf4j-1.7.26.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.12/commons-codec-1.12.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/2.3/xmlgraphics-commons-2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/org/apache/xalan-metainf/8.0.0/xalan-metainf-8.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/org/apache/xalan-interpretive/8.0.0/xalan-interpretive-8.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/docx4j/org/apache/xalan-serializer/8.0.0/xalan-serializer-8.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/arnx/wmf2svg/0.9.8/wmf2svg-0.9.8.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/2.8.1/checker-qual-2.8.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.3.3/error_prone_annotations-2.3.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/plutext/jaxb-xslfo/1.0.1/jaxb-xslfo-1.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/fop/2.3/fop-2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svg-dom/1.10/batik-svg-dom-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-css/1.10/batik-css-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-dom/1.10/batik-dom-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-parser/1.10/batik-parser-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-util/1.10/batik-util-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-constants/1.10/batik-constants-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-i18n/1.10/batik-i18n-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-bridge/1.10/batik-bridge-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-anim/1.10/batik-anim-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-script/1.10/batik-script-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-xml/1.10/batik-xml-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-awt-util/1.10/batik-awt-util-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-gvt/1.10/batik-gvt-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-transcoder/1.10/batik-transcoder-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-svggen/1.10/batik-svggen-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-extension/1.10/batik-extension-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-ext/1.10/batik-ext-1.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-api/4.3.1/avalon-framework-api-4.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/avalon/framework/avalon-framework-impl/4.3.1/avalon-framework-impl-4.3.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/2.0.7/fontbox-2.0.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

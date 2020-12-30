@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Class-Path: docx4j-export-fo-8.1.6.jar docx4j-core-8.1.6.jar docx4j-open
+ xml-objects-8.1.6.jar docx4j-openxml-objects-pml-8.1.6.jar docx4j-openx
+ ml-objects-sml-8.1.6.jar jaxb-svg11-1.0.2.jar mbassador-1.3.2.jar jcl-o
+ ver-slf4j-1.7.26.jar commons-lang3-3.9.jar commons-compress-1.18.jar co
+ mmons-codec-1.12.jar commons-io-2.6.jar httpclient-4.5.8.jar httpcore-4
+ .4.11.jar jackson-core-2.9.9.jar jackson-databind-2.9.9.jar jackson-ann
+ otations-2.9.0.jar xmlgraphics-commons-2.3.jar xalan-metainf-8.0.0.jar 
+ xalan-interpretive-8.0.0.jar xalan-serializer-8.0.0.jar wmf2svg-0.9.8.j
+ ar antlr-runtime-3.5.2.jar stringtemplate-3.2.1.jar antlr-2.7.7.jar che
+ cker-qual-2.8.1.jar error_prone_annotations-2.3.3.jar jaxb-xslfo-1.0.1.
+ jar fop-2.3.jar batik-svg-dom-1.10.jar batik-css-1.10.jar batik-dom-1.1
+ 0.jar batik-parser-1.10.jar batik-util-1.10.jar batik-constants-1.10.ja
+ r batik-i18n-1.10.jar batik-bridge-1.10.jar batik-anim-1.10.jar batik-s
+ cript-1.10.jar batik-xml-1.10.jar batik-awt-util-1.10.jar batik-gvt-1.1
+ 0.jar batik-transcoder-1.10.jar batik-svggen-1.10.jar batik-extension-1
+ .10.jar batik-ext-1.10.jar avalon-framework-api-4.3.1.jar avalon-framew
+ ork-impl-4.3.1.jar fontbox-2.0.7.jar jakarta.xml.bind-api-2.3.2.jar jak
+ arta.activation-api-1.2.1.jar slf4j-api-1.7.26.jar openhtmltopdf-rtl-su
+ pport-1.0.0.jar icu4j-59.1.jar openhtmltopdf-core-1.0.0.jar openhtmltop
+ df-jsoup-dom-converter-1.0.0.jar jsoup-1.11.3.jar docx4j-JAXB-Internal-
+ 8.1.6.jar docx4j-core-8.1.6.jar docx4j-openxml-objects-8.1.6.jar docx4j
+ -openxml-objects-pml-8.1.6.jar docx4j-openxml-objects-sml-8.1.6.jar jax
+ b-svg11-1.0.2.jar mbassador-1.3.2.jar jcl-over-slf4j-1.7.26.jar commons
+ -lang3-3.9.jar commons-compress-1.18.jar commons-codec-1.12.jar commons
+ -io-2.6.jar httpclient-4.5.8.jar httpcore-4.4.11.jar jackson-core-2.9.9
+ .jar jackson-databind-2.9.9.jar jackson-annotations-2.9.0.jar xmlgraphi
+ cs-commons-2.3.jar xalan-metainf-8.0.0.jar xalan-interpretive-8.0.0.jar
+  xalan-serializer-8.0.0.jar wmf2svg-0.9.8.jar antlr-runtime-3.5.2.jar s
+ tringtemplate-3.2.1.jar antlr-2.7.7.jar checker-qual-2.8.1.jar error_pr
+ one_annotations-2.3.3.jar jakarta.xml.bind-api-2.3.2.jar jakarta.activa
+ tion-api-1.2.1.jar slf4j-api-1.7.26.jar hamcrest-core-1.3.jar annotatio
+ ns-15.0.jar commons-math3-3.2.jar log4j-1.2.17.jar autolink-0.6.0.jar j
+ opt-simple-4.6.jar openhtmltopdf-pdfbox-1.0.0.jar pdfbox-2.0.16.jar fon
+ tbox-2.0.16.jar commons-logging-1.2.jar xmpbox-2.0.16.jar openhtmltopdf
+ -core-1.0.0.jar graphics2d-0.24.jar jmh-core-1.13.jar openhtmltopdf-cor
+ e-1.0.0.jar jsoup-1.11.3.jar slf4j-api-1.7.26.jar junit-4.12.jar annota
+ tions-15.0.jar jmh-generator-annprocess-1.13.jar
+

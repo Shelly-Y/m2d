@@ -59,5 +59,6 @@
     <orderEntry type="module" module-name="flexmark-ext-gfm-users" />
     <orderEntry type="module" module-name="Samples" />
     <orderEntry type="library" name="org.jetbrains:annotations" level="project" />
+    <orderEntry type="library" name="org.docx4j:docx4j-export-fo:8.1.6" level="project" />
   </component>
 </module>

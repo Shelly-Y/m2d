@@ -1,0 +1,69 @@
+<component name="ArtifactManager">
+  <artifact name="flexmark-java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/flexmark_java_jar</output-path>
+    <root id="root">
+      <element id="archive" name="flexmark-java.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/main/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="flexmark-all" />
+        <element id="module-output" name="flexmark" />
+        <element id="module-output" name="flexmark-test-util" />
+        <element id="module-output" name="flexmark-util-misc" />
+        <element id="module-output" name="flexmark-util-data" />
+        <element id="module-output" name="flexmark-util-ast" />
+        <element id="module-output" name="flexmark-util-collection" />
+        <element id="module-output" name="flexmark-util-sequence" />
+        <element id="module-output" name="flexmark-util-visitor" />
+        <element id="module-output" name="flexmark-util-format" />
+        <element id="module-output" name="flexmark-util-html" />
+        <element id="module-output" name="flexmark-util-builder" />
+        <element id="module-output" name="flexmark-util-dependency" />
+        <element id="module-output" name="flexmark-ext-abbreviation" />
+        <element id="module-output" name="flexmark-ext-autolink" />
+        <element id="module-output" name="flexmark-ext-escaped-character" />
+        <element id="module-output" name="flexmark-ext-anchorlink" />
+        <element id="module-output" name="flexmark-ext-aside" />
+        <element id="module-output" name="flexmark-ext-attributes" />
+        <element id="module-output" name="flexmark-ext-definition" />
+        <element id="module-output" name="flexmark-ext-emoji" />
+        <element id="module-output" name="flexmark-jira-converter" />
+        <element id="module-output" name="flexmark-ext-enumerated-reference" />
+        <element id="module-output" name="flexmark-ext-footnotes" />
+        <element id="module-output" name="flexmark-ext-gfm-strikethrough" />
+        <element id="module-output" name="flexmark-ext-gfm-tasklist" />
+        <element id="module-output" name="flexmark-ext-ins" />
+        <element id="module-output" name="flexmark-ext-jekyll-front-matter" />
+        <element id="module-output" name="flexmark-ext-jekyll-tag" />
+        <element id="module-output" name="flexmark-ext-spec-example" />
+        <element id="module-output" name="flexmark-ext-superscript" />
+        <element id="module-output" name="flexmark-ext-tables" />
+        <element id="module-output" name="flexmark-ext-toc" />
+        <element id="module-output" name="flexmark-util-options" />
+        <element id="module-output" name="flexmark-ext-typographic" />
+        <element id="module-output" name="flexmark-ext-wikilink" />
+        <element id="module-output" name="flexmark-ext-xwiki-macros" />
+        <element id="module-output" name="flexmark-ext-yaml-front-matter" />
+        <element id="module-output" name="flexmark-ext-youtube-embedded" />
+        <element id="module-output" name="flexmark-html2md-converter" />
+        <element id="module-output" name="flexmark-java-samples" />
+        <element id="module-output" name="flexmark-profile-pegdown" />
+        <element id="module-output" name="flexmark-youtrack-converter" />
+        <element id="module-output" name="flexmark-pdf-converter" />
+        <element id="module-output" name="flexmark-docx-converter" />
+        <element id="module-output" name="flexmark-ext-gitlab" />
+        <element id="module-output" name="flexmark-ext-macros" />
+        <element id="module-output" name="flexmark-ext-admonition" />
+        <element id="module-output" name="flexmark-ext-gfm-issues" />
+        <element id="module-output" name="flexmark-ext-gfm-users" />
+        <element id="module-output" name="flexmark-ext-media-tags" />
+        <element id="module-output" name="flexmark-core-test" />
+        <element id="module-output" name="flexmark-test-specs" />
+        <element id="module-output" name="flexmark-ext-zzzzzz" />
+        <element id="module-output" name="flexmark-java" />
+        <element id="module-output" name="flexmark-tree-iteration" />
+        <element id="module-output" name="flexmark-util-experimental" />
+      </element>
+    </root>
+  </artifact>
+</component>
