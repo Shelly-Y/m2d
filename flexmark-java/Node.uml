@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vladsch.flexmark.util.ast.Node</OriginalElement>
+  <nodes>
+    <node x="1273.25" y="1032.0">com.vladsch.flexmark.ast.ImageRef</node>
+    <node x="774.0" y="1293.5">com.vladsch.flexmark.ast.Paragraph</node>
+    <node x="1057.25" y="997.5">com.vladsch.flexmark.ext.toc.TocOptionsParserTest.ParserNode</node>
+    <node x="550.0" y="1352.0">com.vladsch.flexmark.ast.BulletListItem</node>
+    <node x="820.25" y="940.0">com.vladsch.flexmark.ext.footnotes.Footnote</node>
+    <node x="313.0" y="1236.0">com.vladsch.flexmark.ast.Heading</node>
+    <node x="0.0" y="1305.0">com.vladsch.flexmark.util.ast.Document</node>
+    <node x="609.25" y="1009.0">com.vladsch.flexmark.ast.Image</node>
+    <node x="752.9783844668526" y="2.2913537867410696">com.vladsch.flexmark.util.ast.Node</node>
+    <node x="484.25" y="1032.0">com.vladsch.flexmark.util.ast.Block</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vladsch.flexmark.util.ast.Document" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-65.5" />
+      <point x="146.5" y="1206.0" />
+      <point x="497.375" y="1206.0" />
+      <point x="-39.375" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.ImageRef" target="com.vladsch.flexmark.util.ast.Node">
+      <point x="0.0" y="-31.0" />
+      <point x="1364.25" y="910.0" />
+      <point x="1073.95" y="910.0" />
+      <point x="145.20000000000005" y="445.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.Heading" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-134.5" />
+      <point x="421.5" y="1216.0" />
+      <point x="523.625" y="1216.0" />
+      <point x="-13.125" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.BulletListItem" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-18.5" />
+      <point x="652.0" y="1216.0" />
+      <point x="549.875" y="1216.0" />
+      <point x="13.125" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.util.ast.Block" target="com.vladsch.flexmark.util.ast.Node">
+      <point x="5.6843418860808015E-14" y="-31.0" />
+      <point x="536.75" y="910.0" />
+      <point x="783.55" y="910.0" />
+      <point x="-145.20000000000005" y="445.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.Paragraph" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-77.0" />
+      <point x="870.0" y="1206.0" />
+      <point x="576.125" y="1206.0" />
+      <point x="39.37500000000006" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ext.footnotes.Footnote" target="com.vladsch.flexmark.util.ast.Node">
+      <point x="0.0" y="-123.0" />
+      <point x="0.0" y="445.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.Image" target="com.vladsch.flexmark.util.ast.Node">
+      <point x="0.0" y="-54.0" />
+      <point x="704.75" y="920.0" />
+      <point x="856.15" y="920.0" />
+      <point x="-72.60000000000002" y="445.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ext.toc.TocOptionsParserTest.ParserNode" target="com.vladsch.flexmark.util.ast.Node">
+      <point x="0.0" y="-65.5" />
+      <point x="1155.25" y="920.0" />
+      <point x="1001.35" y="920.0" />
+      <point x="72.60000000000002" y="445.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8728464419475656" x="450.4459492183935" y="443.28341557605665" />
+  <SelectedNodes>
+    <node>com.vladsch.flexmark.util.ast.Node</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

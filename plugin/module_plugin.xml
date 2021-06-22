@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_plugin" default="compile.module.plugin">
+  <dirname property="module.plugin.basedir" file="${ant.file.module_plugin}"/>
+  
+  <property name="module.jdk.home.plugin" value="${jdk.home.intellij_idea_iu-193.6494.35}"/>
+  <property name="module.jdk.bin.plugin" value="${jdk.bin.intellij_idea_iu-193.6494.35}"/>
+  <property name="module.jdk.classpath.plugin" value="jdk.classpath.intellij_idea_iu-193.6494.35"/>
+  
+  <property name="compiler.args.plugin" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="plugin.output.dir" value="${module.plugin.basedir}/out/production/plugin"/>
+  <property name="plugin.testoutput.dir" value="${module.plugin.basedir}/out/test/plugin"/>
+  
+  <path id="plugin.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="plugin.module.production.classpath">
+    <path refid="${module.jdk.classpath.plugin}"/>
+    <path refid="library.flexmark-java.classpath"/>
+  </path>
+  
+  <path id="plugin.runtime.production.module.classpath">
+    <pathelement location="${plugin.output.dir}"/>
+    <path refid="library.flexmark-java.classpath"/>
+  </path>
+  
+  <path id="plugin.module.classpath">
+    <path refid="${module.jdk.classpath.plugin}"/>
+    <pathelement location="${plugin.output.dir}"/>
+    <path refid="library.flexmark-java.classpath"/>
+  </path>
+  
+  <path id="plugin.runtime.module.classpath">
+    <pathelement location="${plugin.testoutput.dir}"/>
+    <pathelement location="${plugin.output.dir}"/>
+    <path refid="library.flexmark-java.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.plugin">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.plugin">
+    <patternset refid="excluded.from.module.plugin"/>
+  </patternset>
+  
+  <path id="plugin.module.sourcepath">
+    <dirset dir="${module.plugin.basedir}">
+      <include name="src"/>
+      <include name="resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.plugin" depends="compile.module.plugin.production,compile.module.plugin.tests" description="Compile module plugin"/>
+  
+  <target name="compile.module.plugin.production" depends="register.custom.compilers" description="Compile module plugin; production classes">
+    <mkdir dir="${plugin.output.dir}"/>
+    <javac2 destdir="${plugin.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.plugin}/javac">
+      <compilerarg line="${compiler.args.plugin}"/>
+      <bootclasspath refid="plugin.module.bootclasspath"/>
+      <classpath refid="plugin.module.production.classpath"/>
+      <src refid="plugin.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.plugin"/>
+    </javac2>
+    
+    <copy todir="${plugin.output.dir}">
+      <fileset dir="${module.plugin.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.plugin.basedir}/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.plugin.tests" depends="register.custom.compilers,compile.module.plugin.production" description="compile module plugin; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.plugin" description="cleanup module">
+    <delete dir="${plugin.output.dir}"/>
+    <delete dir="${plugin.testoutput.dir}"/>
+  </target>
+  
+  <property name="plugin.plugin.path.jar" value="${module.plugin.basedir}/plugin.zip"/>
+  
+  <!-- Build archive for plugin 'plugin' -->
+  <target name="plugin.build.jar.plugin" depends="compile.module.plugin" description="Build plugin archive for module &#39;plugin&#39;">
+    <property name="tmp.dir.plugin" value="${module.plugin.basedir}/../temp"/>
+    <mkdir dir="${tmp.dir.plugin}"/>
+    <mkdir dir="${tmp.dir.plugin}/lib"/>
+    <jar destfile="${tmp.dir.plugin}/lib/plugin.jar" duplicate="preserve">
+      <zipfileset dir="${module.plugin.basedir}/out/production/plugin"/>
+      <zipfileset file="${module.plugin.basedir}/resources/META-INF/plugin.xml" prefix="META-INF"/>
+      <manifest>
+        <attribute name="Created-By" value="IntelliJ IDEA"/>
+        <attribute name="Manifest-Version" value="1.0"/>
+      </manifest>
+    </jar>
+    <copy file="${module.plugin.basedir}/lib/flexmark-java.jar" tofile="${tmp.dir.plugin}/lib/flexmark-java.jar"/>
+    <zip destfile="${plugin.plugin.path.jar}">
+      <fileset dir="${module.plugin.basedir}/../temp"/>
+    </zip>
+    <delete dir="${tmp.dir.plugin}"/>
+  </target>
+</project>

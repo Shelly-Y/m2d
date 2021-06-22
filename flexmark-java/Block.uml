@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vladsch.flexmark.util.ast.Block</OriginalElement>
+  <nodes>
+    <node x="408.5" y="520.0">com.vladsch.flexmark.ast.OrderedList</node>
+    <node x="197.5" y="531.5">com.vladsch.flexmark.ast.BulletList</node>
+    <node x="1466.0" y="155.0">com.vladsch.flexmark.ast.Heading</node>
+    <node x="0.0" y="224.0">com.vladsch.flexmark.util.ast.Document</node>
+    <node x="921.0" y="0.0">com.vladsch.flexmark.util.ast.Block</node>
+    <node x="624.25" y="543.0">com.vladsch.flexmark.ast.OrderedListItem</node>
+    <node x="1703.0" y="212.5">com.vladsch.flexmark.ast.Paragraph</node>
+    <node x="1229.0" y="497.0">com.vladsch.flexmark.ext.toc.TocBlock</node>
+    <node x="313.0" y="235.5">com.vladsch.flexmark.ast.ListBlock</node>
+    <node x="992.0" y="166.5">com.vladsch.flexmark.ext.footnotes.FootnoteBlock</node>
+    <node x="721.0" y="132.0">com.vladsch.flexmark.ast.ListItem</node>
+    <node x="859.25" y="555.5">com.vladsch.flexmark.ast.BulletListItem</node>
+    <node x="504.0" y="258.5">com.vladsch.flexmark.ext.tables.TableBlock</node>
+    <node x="1229.0" y="212.5">com.vladsch.flexmark.ext.toc.TocBlockBase</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vladsch.flexmark.util.ast.Document" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-65.5" />
+      <point x="146.5" y="82.0" />
+      <point x="927.5625" y="82.0" />
+      <point x="-45.9375" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.OrderedList" target="com.vladsch.flexmark.ast.ListBlock">
+      <point x="0.0" y="-54.0" />
+      <point x="504.0" y="472.0" />
+      <point x="441.25" y="472.0" />
+      <point x="42.75" y="54.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.ListItem" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-157.5" />
+      <point x="846.5" y="112.0" />
+      <point x="966.9375" y="112.0" />
+      <point x="-6.5625" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ext.tables.TableBlock" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-31.0" />
+      <point x="599.5" y="102.0" />
+      <point x="953.8125" y="102.0" />
+      <point x="-19.6875" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.Heading" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-134.5" />
+      <point x="1574.5" y="92.0" />
+      <point x="1006.3125" y="92.0" />
+      <point x="32.8125" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ext.toc.TocBlock" target="com.vladsch.flexmark.ext.toc.TocBlockBase">
+      <point x="0.0" y="-77.0" />
+      <point x="0.0" y="77.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.OrderedListItem" target="com.vladsch.flexmark.ast.ListItem">
+      <point x="0.0" y="-31.0" />
+      <point x="731.75" y="472.0" />
+      <point x="783.75" y="472.0" />
+      <point x="-62.75" y="157.5" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.BulletList" target="com.vladsch.flexmark.ast.ListBlock">
+      <point x="0.0" y="-42.5" />
+      <point x="293.0" y="472.0" />
+      <point x="355.75" y="472.0" />
+      <point x="-42.75" y="54.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ext.toc.TocBlockBase" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-77.0" />
+      <point x="1337.5" y="102.0" />
+      <point x="993.1875" y="102.0" />
+      <point x="19.6875" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.Paragraph" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-77.0" />
+      <point x="1799.0" y="82.0" />
+      <point x="1019.4375" y="82.0" />
+      <point x="45.9375" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ext.footnotes.FootnoteBlock" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-123.0" />
+      <point x="1100.5" y="112.0" />
+      <point x="980.0625" y="112.0" />
+      <point x="6.5625" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.ListBlock" target="com.vladsch.flexmark.util.ast.Block">
+      <point x="0.0" y="-54.0" />
+      <point x="398.5" y="92.0" />
+      <point x="940.6875" y="92.0" />
+      <point x="-32.8125" y="31.0" />
+    </edge>
+    <edge source="com.vladsch.flexmark.ast.BulletListItem" target="com.vladsch.flexmark.ast.ListItem">
+      <point x="0.0" y="-18.5" />
+      <point x="961.25" y="472.0" />
+      <point x="909.25" y="472.0" />
+      <point x="62.75" y="157.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8207438449449971" x="658.5014507595156" y="380.23479547135474" />
+  <SelectedNodes>
+    <node>com.vladsch.flexmark.util.ast.Block</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
